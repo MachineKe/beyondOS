@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SuperHero</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="nav" class="nav">
+      <a href="LandingPage.html">HOME</a>
+      <a href="hero.html">HERO</a>
+      <a href="dog.html">DOG</a>
+    </div>
+    <div class="container">
+      <h1>
+        <span class="head">🌟search your</span> <span class="big">HERO</span>
+      </h1>
+      <div class="input">
+        <input type="text" id="search" placeholder="batman" />
+        <span class="searchButton">
+          <img id="searchButton" src="https://res.cloudinary.com/dmpposta9/image/upload/v1699261459/Javascript/ImageGenerator/vo3tm6xa8gr55cozr6ev.svg" alt="" />
+        </span>
+
+        <button id="heroButton" class="heroButton button">Random Hero</button>
+      </div>
+
+      <div id="heroImage" class="heroImage"><img src="" alt="" /></div>
+    </div>
+    <script src="hero.js"></script>
+  </body>
+</html>

@@ -16,7 +16,7 @@ function openWeatherAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Weather App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/Weather-App-Javascript-/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/WEATHER/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
@@ -60,7 +60,7 @@ function openImageGenAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Image Generator App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/ImageGenerator/LandingPage.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/IMAGEGEN/LandingPage.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
@@ -82,7 +82,7 @@ function openDigitalClockAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Digital Clock App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/Digital-Clock-JavaScript-/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/DIGITALCLOCK/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
@@ -104,7 +104,7 @@ function openStopWatchAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">StopWatch App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/StopWatch/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/STOPWATCH/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
@@ -126,7 +126,7 @@ function openPianoAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Piano App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/Javascript-Piano/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/PIANO/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
@@ -148,7 +148,7 @@ function openCalculatorAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Calculator App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/Simple-Javascript-Calculator/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/CALCULATOR/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
