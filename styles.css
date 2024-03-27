@@ -1,0 +1,106 @@
+/* Add these styles for resizable handles */
+.window {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 300px;
+    min-height: 150px;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.window-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    cursor: move;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.window-content {
+    padding: 10px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+/* Resizable handles */
+.resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    cursor: nwse-resize; /* North-West to South-East resize cursor */
+    bottom: 0;
+    right: 0;
+}
+/* Add these styles to constrain window content */
+.window-content {
+    padding: 10px;
+    max-width: calc(100% - 20px); /* Constrain content width to window width minus padding */
+    max-height: calc(100% - 40px); /* Constrain content height to window height minus header and padding */
+}
+
+a {
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        color: blue;
+    }
+    &:visited {
+        color: #007bff;
+    }
+}
+
+
+.app-drawer {
+    top: 100px; 
+    left: 10px; 
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.app-drawer.show {
+    display: block;
+}
+
+.app-drawer a {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+ .app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust column width as needed */
+    gap: 10px; /* Adjust gap between grid items */
+}
+
+.app-grid a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+.app-drawer a:hover {
+    color: #007bff;
+}
+
+
+
