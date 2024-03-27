@@ -104,7 +104,7 @@ function openStopWatchAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">StopWatch App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/STOPWATCH/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="./Apps/STOPWATC/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
