@@ -38,7 +38,7 @@ function openCountdownAppWindow() {
  const appContent = `
  <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Countdown App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
  <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-     <iframe src="./Apps/countDownApp/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+     <iframe src="./Apps/CountDownApp/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
      <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
  </div>`;
  
