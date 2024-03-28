@@ -1,6 +1,6 @@
 let windowCount = 0;
-const initialAppContentHeight = 610; // Initial height for app content
-const initialAppContentWidth = 530; // Initial width for app content
+const initialAppContentHeight = window.innerHeight; // Initial height for app content
+const initialAppContentWidth = window.innerWidth; // Initial width for app content
 const initialWindowHeight = 670; // Initial height for the windows
 const initialWindowWidth = 550; // Initial width for the windows
 
@@ -21,8 +21,12 @@ function openWeatherAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+
+newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -43,8 +47,12 @@ function openCountdownAppWindow() {
  </div>`;
  
  newWindow.innerHTML = appContent;
- newWindow.style.height = initialWindowHeight + 'px';
- newWindow.style.width = initialWindowWidth + 'px';
+//  newWindow.style.height = initialWindowHeight + 'px';
+//  newWindow.style.width = initialWindowWidth + 'px';
+    
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
  document.body.appendChild(newWindow);
 }    
 
@@ -65,8 +73,12 @@ function openImageGenAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -87,8 +99,12 @@ function openDigitalClockAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -109,8 +125,12 @@ function openStopWatchAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -153,8 +173,11 @@ function openCalculatorAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -177,8 +200,11 @@ function openCareerAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
@@ -200,8 +226,11 @@ function openKrunkerAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
     document.body.appendChild(newWindow);
 }
 
