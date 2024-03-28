@@ -183,6 +183,30 @@ function openCareerAppWindow() {
 }
 
 
+// Function to open a new window for Krunker App
+function openKrunkerAppWindow() {
+    windowCount++;
+    const windowId = 'window' + windowCount;
+    const newWindow = document.createElement('div');
+    newWindow.className = 'window';
+    newWindow.id = windowId;
+    
+    // Content for Krunker App
+    const appContent = `
+        <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Krunker<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
+        <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
+            <iframe src="https://krunker.io" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
+        </div>`;
+    
+    newWindow.innerHTML = appContent;
+    newWindow.style.height = initialWindowHeight + 'px';
+    newWindow.style.width = initialWindowWidth + 'px';
+    document.body.appendChild(newWindow);
+}
+
+
+
 // Function to close a window
 function closeWindow(windowId) {
     const window = document.getElementById(windowId);
