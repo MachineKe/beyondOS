@@ -240,6 +240,33 @@ function openKrunkerAppWindow() {
 }
 
 
+// Function to open a new window for youtube App
+function openCodeStudioAppWindow() {
+    windowCount++;
+    const windowId = 'window' + windowCount;
+    const newWindow = document.createElement('div');
+    newWindow.className = 'window';
+    newWindow.id = windowId;
+    
+    // Content for Youtube App
+    const appContent = `
+        <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Code Studio<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
+        <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
+            <iframe src="https://coderush.vercel.app/" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
+        </div>`;
+    
+    newWindow.innerHTML = appContent;
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+    newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
+    document.body.appendChild(newWindow);
+}
+
+
+
 
 // Function to close a window
 function closeWindow(windowId) {
