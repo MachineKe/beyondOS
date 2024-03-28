@@ -151,8 +151,13 @@ function openPianoAppWindow() {
         </div>`;
     
     newWindow.innerHTML = appContent;
-    newWindow.style.height = initialWindowHeight + 'px';
-    newWindow.style.width = initialWindowWidth + 'px';
+    // newWindow.style.height = initialWindowHeight + 'px';
+    // newWindow.style.width = initialWindowWidth + 'px';
+ 
+        newWindow.style.height = "100vh"; // Set height to fill viewport height
+    newWindow.style.width = "100vw"; // Set width to fill viewport width
+
+
     document.body.appendChild(newWindow);
 }
 
