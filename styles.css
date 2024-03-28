@@ -33,12 +33,14 @@
 .resize-handle {
     position: absolute;
     width: 10px;
-    height: 10px;
+    height: 99%;
     background-color: #007bff;
     cursor: nwse-resize; /* North-West to South-East resize cursor */
     bottom: 0;
     right: 0;
 }
+
+
 /* Add these styles to constrain window content */
 .window-content {
     padding: 10px;

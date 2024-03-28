@@ -17,7 +17,7 @@ function openWeatherAppWindow() {
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Weather App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
             <iframe src="./Apps/WEATHER/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
-            <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
+            <div class="resize-handle top-left-resize" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
     newWindow.innerHTML = appContent;
@@ -272,6 +272,10 @@ function resizeWindow(event, window, initialWidth, initialHeight, startX, startY
         iframe.style.width = (newWidth - 20) + 'px'; // Subtracting padding
         iframe.style.height = (newHeight - 40) + 'px'; // Subtracting header and padding
     }
+
+    // Update startX and startY for the next resize operation
+    startX = event.clientX;
+    startY = event.clientY;
 }
 
 
