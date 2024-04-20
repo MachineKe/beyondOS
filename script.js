@@ -146,7 +146,7 @@ function openPianoAppWindow() {
     const appContent = `
         <div class="window-header" draggable="true" ondragstart="startDrag(event, '${windowId}')">Piano App<span class="close" onclick="closeWindow('${windowId}')">&times;</span></div>
         <div class="window-content" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"> <!-- Adjusted content width and height -->
-            <iframe src="./Apps/PIANO/index.html" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
+            <iframe src="https://javascriptpiano.vercel.app" frameborder="0" class="app-frame" style="width: ${initialAppContentWidth}px; height: ${initialAppContentHeight}px;"></iframe>
             <div class="resize-handle" onmousedown="startResize(event, '${windowId}')"></div>
         </div>`;
     
